@@ -4,6 +4,8 @@ This repository contains a library for the Nintendo 64 (N64) compiler. It's desi
 
 ## Table of Contents
 
+![logo](https://github.com/Degamisu/N64-Library/assets/149022474/cbf6a5a3-fb65-4f17-8adc-45878f64677e)
+
 1. [Introduction](#introduction)
 2. [File Structure](#file-structure)
 3. [Building](#building)
