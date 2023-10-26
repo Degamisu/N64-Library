@@ -34,9 +34,9 @@ The file structure is organized as follows:
 1. **Compile C Source Code (For n64library.c)**:
    - For a basic compilation, you can use the following command:
    ```
-   gcc -c src/n64library.c -o build/n64library.o
+   gcc -c src/n64library.c -o build/n64library.o -Iinclude
    ```
-   This command compiles `n64library.c` and produces an object file `n64library.o` in the `build` directory.
+   This command compiles `n64library.c` and produces an object file `n64library.o` in the `build` directory. (Tested)
 
 2. **Create a Static Library**:
    - To create a static library from the object file, you can use the following command:
