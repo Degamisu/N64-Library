@@ -1,4 +1,5 @@
 # N64 Library
+**PLEASE SEE [details.md](documentation/details.md) FOR MORE INFORMATION**
 
 This repository contains a library for the Nintendo 64 (N64) compiler. It's designed to assist developers working on N64 projects.
 
