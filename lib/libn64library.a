@@ -1,0 +1,34 @@
+// n64library.h (Header file for your library)
+#ifndef N64LIBRARY_H
+#define N64LIBRARY_H
+
+// Define your library's functions and data structures here
+
+#endif
+
+// n64library.c (Source code for your library)
+#include "n64library.h"
+
+// Implement your library's functions here
+
+// example1.c (Example program using your library)
+#include <stdio.h>
+#include "n64library.h"
+
+int main() {
+    // Use your library's functions in this example
+    printf("Hello from example1.c!\n");
+
+    return 0;
+}
+
+// example2.c (Another example program)
+#include <stdio.h>
+#include "n64library.h"
+
+int main() {
+    // Use your library's functions in this example
+    printf("Hello from example2.c!\n");
+
+    return 0;
+}

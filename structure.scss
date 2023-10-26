@@ -1,0 +1,25 @@
+N64Library/
+│
+├── include/
+│   ├── n64library.h       (Header file for your library)
+│
+├── src/
+│   ├── n64library.c       (Source code for your library)
+│
+├── lib/
+│   ├── libn64library.a    (Static library file, if using C/C++)
+│   ├── libn64library.so   (Shared library file, if using C/C++)
+│
+├── examples/
+│   ├── example1.c         (Example program using your library)
+│   ├── example2.c         (Another example program)
+│
+├── documentation/
+│   ├── README.md          (Documentation on how to use the library)
+│   ├── docs/              (Additional documentation files)
+│
+├── build/                 (Build artifacts, generated during compilation)
+│
+├── tests/                 (Unit tests for your library)
+│
+└── makefile               (Build script for compiling the library)
