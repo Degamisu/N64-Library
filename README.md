@@ -9,7 +9,7 @@ This repository contains a library for the Nintendo 64 (N64) compiler. It's desi
 
 1. [Introduction](#introduction)
 2. [File Structure](#file-structure)
-3. [Building](#installation)
+3. [Installation](#installation)
 4. [Usage](#usage)
 5. [Documentation](#documentation)
 6. [Examples](#examples)
