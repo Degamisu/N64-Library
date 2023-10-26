@@ -9,7 +9,7 @@ This repository contains a library for the Nintendo 64 (N64) compiler. It's desi
 
 1. [Introduction](#introduction)
 2. [File Structure](#file-structure)
-3. [Building](#building)
+3. [Building](#installation)
 4. [Usage](#usage)
 5. [Documentation](#documentation)
 6. [Examples](#examples)
@@ -29,13 +29,41 @@ The file structure is organized as follows:
 - `examples/`: Demonstrates how to use the library with practical examples.
 - `docs/`: Contains documentation for the library.
 
-## Building
+## Installation
 
-To build the library, follow these steps:
+1. **Compile C Source Code (For n64library.c)**:
+   - For a basic compilation, you can use the following command:
+   ```
+   gcc -c src/n64library.c -o build/n64library.o
+   ```
+   This command compiles `n64library.c` and produces an object file `n64library.o` in the `build` directory.
 
-1. Navigate to the root directory.
-2. Run the build script, which compiles the source code.
-3. The compiled library will be available in the `build/` directory.
+2. **Create a Static Library**:
+   - To create a static library from the object file, you can use the following command:
+   ```
+   ar rcs lib/libn64library.a build/n64library.o
+   ```
+   This command creates a static library file `libn64library.a` in the `lib` directory.
+
+3. **Create a Shared Library (Optional)**:
+   - If you want to create a shared library (dynamic link library), you can use a command like this:
+   ```
+   gcc -shared -o lib/libn64library.so build/n64library.o
+   ```
+   This command creates a shared library file `libn64library.so` in the `lib` directory.
+
+4. **Compile Example Programs**:
+   - To compile your example programs, you can use commands like this:
+   ```
+   gcc examples/example1.c -o build/example1 -I include -L lib -ln64library
+   ```
+   This command compiles `example1.c` and links it with your library.
+
+5. **Run Example Programs**:
+   - After compilation, you can run your example programs:
+   ```
+   ./build/example1
+   ```
 
 ## Usage
 
